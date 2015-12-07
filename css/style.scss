@@ -1,0 +1,154 @@
+body{
+	font-family: "Fira sans",sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+.grid{
+	overflow: hidden;
+}
+
+nav{
+	width: 100%;
+	.wrapper{
+		margin:0 auto;
+		width: 80%;
+		margin-top: 10px;
+	}
+	ul{
+		list-style:none;
+		margin:0;
+		li{
+			display: inline-block;
+			padding: 10px;
+			a{
+				font-size: 30px;
+				color: grey;
+				margin: 0 10px;
+				transition:.26s ease-in-out all;
+				text-decoration: none;
+				&:hover{
+					color: #503e52;
+				}
+			}
+		}
+	}
+}
+
+.info{
+	background: none;
+}
+.filler{
+	height:300px;
+	background-color: #3a3e4f;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Roboto',sans-serif;
+	margin: 0 auto;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	h1{
+		padding-top: 8pc;
+	}
+}
+//columns
+
+.height{
+	overflow: hidden;
+	height:350px;
+	background-size: cover;
+	background-position: center center;
+	width: 33.3%;
+	line-height: 2em;
+	padding: 20px;
+		p{
+		opacity: 0;
+		transform: translateY(30px);
+		transition:1s ease-in-out;
+		}
+	.seen{
+		transform: translateY(0px);
+		transition:1s ease-in-out;
+		opacity: 1;
+	}
+}
+
+
+.pic{
+	height: 210px;
+	margin:0;
+	padding: 0;
+	z-index: 1;
+	width: 16.67%;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0;
+	transition: .56s ease-in-out all;
+	overflow: hidden;
+
+	&:hover{
+		transform: scale(1.06);
+		z-index: -1;
+	}
+}
+.pic-seen{
+	opacity: 1;
+
+}
+
+.window{
+	background-image: url(/img/show.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	.button{
+		border: 3px solid white;
+		padding: 10px 30px;
+		width: 200px;
+		font-weight: bold;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-family: "Raleway",sans-serif;
+		position: relative;
+		overflow: hidden;
+		transition:.26s ease-in-out all;
+		outline:0;
+		z-index: 1;
+		background: none;
+		&:hover{
+			cursor: pointer;
+			&:before{
+				left:0;
+			}
+		}
+		&:before{
+			position: absolute;
+			left:100%;
+			top:0;
+			content:" ";
+			transition:.26s ease-in-out;
+			background-color: #3a3e4f;
+			z-index: -1;
+		}
+
+	}
+	.overlay{
+
+		margin:0;
+		padding: 0;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+
+	}
+}
+//columns
