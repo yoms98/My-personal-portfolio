@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('.grid__col-1-of-3').css('backgroundImage', 'url(/img/2.jpeg)');
-		$('.grid__col-3-of-3').css('backgroundImage', 'url(../img/355b160e.jpeg)');
+	$('.height').eq(0).css('backgroundImage', 'url(/img/2.jpeg)');
+		$('.height').eq(2).css('backgroundImage', 'url(../img/355b160e.jpeg)');
 		$('.pic').eq(0).css('backgroundImage', 'url(/img/10.jpeg)');
 		$('.pic').eq(1).css('backgroundImage', 'url(/img/2.jpeg)');
 		$('.pic').eq(2).css('backgroundImage', 'url(/img/3.jpeg)');
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 $(window).scroll(function(){
 	var wscroll2 = $(this).scrollTop();
-	if(wscroll2 > $('.grid').eq(0).offset().top - $(window).height()/2 - 300){
+	if(wscroll2 > $('.grid').eq(0).offset().top - $(window).height()/2-520){
 		$('.pic').each(function(i){
 		setTimeout(function(){
 				$('.pic').eq(i).addClass('pic-seen');
@@ -28,10 +28,24 @@ $(window).scroll(function(){
 });
 
 
+
+
+$(window).scroll(function(){
+	var wscroll3 = $(this).scrollTop();
+
+	if(wscroll3 > $('.articles').offset().top - $(window).height()/2 - 100){
+		$('.frame').each(function(i){
+				setTimeout(function(){
+					$('.frame').eq(i).addClass('tbl-seen');
+				}, 150 * (i+1));
+		});
+	}
+});
+
 $(window).scroll(function(){
 	var wscroll = $(this).scrollTop();
 
-	if(wscroll > $('.grid').eq(1).offset().top - $(window).height()/2 - 200){
+	if(wscroll > $('.grid').eq(1).offset().top - $(window).height()/4.5){
 		$('.height p').addClass('seen').css('opacity','1');
 
 	}
