@@ -155,3 +155,75 @@ nav {
   opacity: 1;
   transform: translateX(0px);
   transition: .79s ease-in-out all; }
+
+.div-wrap {
+  overflow: hidden;
+  width: 50%; }
+
+.thumbs {
+  background-color: #2f3238;
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  justify-content: center; }
+  .thumbs p {
+    color: white; }
+  .thumbs h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+    padding-top: 20px; }
+  .thumbs strong {
+    font-weight: bolder; }
+  .thumbs .nail {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 10px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .9s ease-in-out all; }
+    .thumbs .nail:hover {
+      transform: scale(1.02); }
+      .thumbs .nail:hover .julia p {
+        transform: translateX(0px); }
+    .thumbs .nail .julia {
+      position: absolute;
+      text-align: left;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .26s ease-in-out all; }
+    .thumbs .nail .julia p:first-child {
+      -webkit-transition-delay: 0.15s;
+      transition-delay: 0.35s; }
+    .thumbs .nail .julia p:nth-of-type(2) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.21s; }
+    .thumbs .nail .julia p:nth-of-type(3) {
+      -webkit-transition-delay: 0.05s;
+      transition-delay: 0.15s; }
+    .thumbs .nail .julia:hover p:first-child {
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+    .thumbs .nail .julia:hover p:nth-of-type(2) {
+      -webkit-transition-delay: 0.05s;
+      transition-delay: 0.05s; }
+    .thumbs .nail .julia:hover p:nth-of-type(3) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s; }
+    .thumbs .nail .julia p {
+      background-color: white;
+      padding: 3px;
+      width: 240px;
+      font-size: 15px;
+      margin: 20px;
+      line-height: 2em;
+      color: black;
+      transform: translateX(-300px);
+      transition: .9s ease-in-out all; }

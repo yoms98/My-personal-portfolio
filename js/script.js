@@ -10,9 +10,8 @@ $(document).ready(function() {
 		$('.pic').eq(6).css('backgroundImage', 'url(/img/7.jpg)');
 		$('.pic').eq(7).css('backgroundImage', 'url(/img/8.jpg)');
 		$('.pic').eq(8).css('backgroundImage', 'url(/img/9.jpg)');
-
-
-
+		$('.thumbs .nail').eq(0).css('backgroundImage','url(/img/11.jpeg)');
+		$('.thumbs .nail').eq(1).css('backgroundImage','url(/img/12.jpg)');
 });
 
 

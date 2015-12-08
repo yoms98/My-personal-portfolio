@@ -190,4 +190,106 @@ h4{
 	transform: translateX(0px);
 	transition: .79s ease-in-out all;
 }
+
+.div-wrap{
+	overflow: hidden;
+	width: 50%;
+}
+
+.thumbs{
+	background-color: #2f3238;
+	display: flex;
+	padding: 30px;
+	flex-direction: row;
+	justify-content: center;
+	p{
+		color: white;
+	}
+h2{
+	color:white;
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-top: -10px;
+	padding-top: 20px;
+}
+	strong{
+		font-weight: bolder;
+	}
+	.nail{
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		margin: 10px;
+		height: 300px;
+		padding: 10px;
+		position: relative;
+		overflow: hidden;
+		transition:.9s ease-in-out all;
+		&:hover{
+			transform: scale(1.02);
+
+			.julia p {
+				transform: translateX(0px);
+			}
+
+
+
+	}
+	.julia{
+		position: absolute;
+		text-align: left;
+		left:0;
+		width: 100%;
+		height: 100%;
+		transition:.26s ease-in-out all;
+
+
+	}
+	.julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.35s;
+}
+
+.julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.21s;
+}
+
+.julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.15s;
+}
+
+.julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+	.julia p{
+		background-color: white;
+		padding: 3px;
+		width: 240px;
+		font-size: 15px;
+		margin: 20px;
+		line-height: 2em;
+		color: black;
+		transform: translateX(-300px);
+		transition: .9s ease-in-out all;
+
+	}
+
+}
 //columns
+}
