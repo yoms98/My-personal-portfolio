@@ -12,8 +12,20 @@ $(document).ready(function() {
 		$('.pic').eq(8).css('backgroundImage', 'url(/img/9.jpg)');
 		$('.thumbs .nail').eq(0).css('backgroundImage','url(/img/11.jpeg)');
 		$('.thumbs .nail').eq(1).css('backgroundImage','url(/img/12.jpg)');
-});
+		function clientChange(){
+			var $this = $(this);
+			  var currentActiveClient = $('.client-carosel').find('.is-active');
+			 var position = $('.client-carosel').children().index(currentActiveClient);
+		   var clientNum = $('.client-unit').length;
+			 
+			 $('.is-active').removeClass('is-active').next().addClass('is-active');
 
+
+
+		}
+		clientChange();
+
+});
 
 $(window).scroll(function(){
 	var wscroll2 = $(this).scrollTop();

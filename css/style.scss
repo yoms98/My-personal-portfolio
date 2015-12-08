@@ -1,3 +1,9 @@
+@import "bourbon/bourbon",
+				"animations"
+				;
+
+
+
 body{
 	font-family: "Source sans Pro",sans-serif;
 	margin:0;
@@ -8,32 +14,6 @@ body{
 	overflow: hidden;
 }
 
-nav{
-	width: 100%;
-	.wrapper{
-		margin:0 auto;
-		width: 80%;
-		margin-top: 10px;
-	}
-	ul{
-		list-style:none;
-		margin:0;
-		li{
-			display: inline-block;
-			padding: 10px;
-			a{
-				font-size: 30px;
-				color: grey;
-				margin: 0 10px;
-				transition:.26s ease-in-out all;
-				text-decoration: none;
-				&:hover{
-					color: #503e52;
-				}
-			}
-		}
-	}
-}
 
 .info{
 	background: none;
@@ -292,4 +272,74 @@ h2{
 
 }
 //columns
+}
+.controls{
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.testimonials{
+	padding: 40px 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	.client-unit{
+		@include position(absolute, 0px null null 50%);
+		margin: 90px 0 50px -150px;
+		display: none;
+		z-index: 1;
+
+	}
+	.is-active{
+		display: block;
+
+	}
+	h3{
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		margin-bottom: 90px;
+	}
+		.next{
+		@include position(absolute, 40% null null 90px);
+		font-size: 70px;
+		color: #6b546f;
+	}
+
+	.prev{
+			@include position(absolute, 40% 90px null null);
+			font-size: 70px;
+			color: #6b546f;
+	}
+
+	.client-content{
+		width: 400px;
+		line-height: 2.1em;
+
+	}
+	.client-carosel{
+		width: 100%;
+		position: relative;
+		.client-unit{
+				max-width: 700px;
+				margin: 0 auto 50px;
+		}
+		.client-face{
+			text-align: center;
+			min-height: 300px;
+			.face{
+				background-color: #333;
+				border-radius: 50%;
+				@include size(300px);
+			}
+
+		}
+		strong.client-name{
+			display: block;
+		}
+	}
+
 }
